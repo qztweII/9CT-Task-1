@@ -8,10 +8,10 @@
 ---
 
 ## Day 1 - 28-03-2025
-- Eli is making ideas for how the robot might detect and remember different blocks.
+- Eli is making ideas for how the robot might detect, remember different blocks and deciding what previous tasks code we can use for inspiration.
 
 ### Plans for next time
-- The group should decide on how the robot will function, start refining the code and continue research task
+- The group should decide on how the robot will function, start refining the code and continue research task.
 
 ### Other Notes
 - The blocks were shown to the class today, they were quite big compared to the map.
