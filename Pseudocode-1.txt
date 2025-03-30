@@ -4,5 +4,31 @@ Start
 Look for objects by spinning around until something comes up on ultrasonic sensors
 When I find a thing on my ultrasonic sensor, I will go towards it. 
 I will then turn so my colour sensor can sense it. 
-If colour sensor says RED or YELLOW, I will bash it as hard as I possibly can. 
+If colour sensor says RED or YELLOW, I will bash it as hard as I possibly can. (Transportation, I guess)
 Anyhow, I will then move back a bit, then repeat the process. 
+However, if I cannot see anything, I will move a little to the side, then try again. 
+
+
+
+
+
+
+Actual pseudocode:
+Start
+Forever:
+    If no object:
+        spin (dont wait)
+        while spinning:
+            see if anything comes up on ultrasonic
+            wait 10 ms
+        spin cw 90 degrees
+        move forward 20 cm
+    Move forward until it is 10 cm away
+    spin ccw 45 degrees
+    colour sensor
+    if object is RED or YELLOW:
+        move back 15 cm 
+        Full speed 30 cm
+        stop (brake)
+    reverse 10 cm
+    spin cw 10 degrees
