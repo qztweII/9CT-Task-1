@@ -1,6 +1,7 @@
 a = "s"
-seeing_red = False
-seeing_yellow = False
+seeR = False
+seeY = False
+distance = PortC
 grid = [0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
 [0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
 [0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
@@ -13,15 +14,17 @@ grid = [0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
 [0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
 
 def find():
+    global seeY, seeR
     move in a pattern i havent decided yet or random
 def found():
+    global seeY, seeR
     if distance < 20:
         while distance != 5:
             go_forward
         if distance == (4, 6) and colour == (71, 80):
-            seeing_yellow = True
+            seeY = True
         elif distance == (4, 6) and colour == (46, 55):
-            seeing_red = True
+            seeR = True
         else:
             record_other()
 def():
