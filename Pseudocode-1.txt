@@ -23,7 +23,7 @@ Forever:
             wait 10 ms
         spin cw 90 degrees
         move forward 20 cm
-    Move forward until it is 10 cm away
+    Move forward until it is 5 cm away
     spin ccw 45 degrees
     colour sensor
     if object is RED or YELLOW:
