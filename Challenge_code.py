@@ -1,7 +1,8 @@
 a = "s"
 seeR = False
 seeY = False
-distance = PortC
+distance = PortX #replace with ultrasonic sensor code
+colour = PortX #replace with colour sensor
 grid = [0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
 [0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
 [0, 0, 0, 0, 0, 0, 0, 0, 0, 0],

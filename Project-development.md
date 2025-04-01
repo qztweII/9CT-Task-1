@@ -32,22 +32,22 @@
 
 ---
 
-## Day 2 - DD-MM-YYYY
-- [List the objectives or tasks planned for the day]
+## Day 2 - 31-03-2025
+- Eli fixed a problem with pushing and pulling files, worked on flowgorithm and worked on pseudocode.
 
 ### Plans for next time
-- [List tasks or goals for the next workday]
+- finish pseudocode and work more on flowgorithm
 
 ### Other Notes
 - [Any miscellaneous notes, feedback, or ideas]
 
 ---
 
-## Day 3 - DD-MM-YYYY
-- [List the objectives or tasks planned for the day]
+## Day 3 - 01-04-2025
+- Eli is working on finishing pseudocode and working on ideas for the robots movement and detection code.
 
 ### Plans for next time
-- [List tasks or goals for the next workday]
+- finish all of the pseudocode, flowgorithm and continue with the coding and theory.
 
 ### Other Notes
 - [Any miscellaneous notes, feedback, or ideas]
