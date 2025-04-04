@@ -22,7 +22,7 @@
 ---
 
 ## Day 1 - 28-03-2025
-- Eli is making ideas for how the robot might detect, remember different blocks and deciding what previous tasks code we can use for inspiration.
+- Eli is making ideas for how the robot might detect, remember different blocks and deciding what previous tasks code we can use for inspiration. Terence had been writing a pseudocode. 
 
 ### Plans for next time
 - The group should decide on how the robot will function, start refining the code and continue research task.
@@ -32,8 +32,8 @@
 
 ---
 
-## Day 2 - 31-03-2025
-- Eli fixed a problem with pushing and pulling files, worked on flowgorithm and worked on pseudocode.
+## Day 2 - 01-04-2025
+- The group had been coming up with second ideas of how the bot will operate. We might need some intense maths or stuff, and I (Terence) have not figured out what to do if the robot detects only three objects if the farther thing gets blocked
 
 ### Plans for next time
 - finish pseudocode and work more on flowgorithm
