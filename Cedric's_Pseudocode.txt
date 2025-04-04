@@ -1,0 +1,43 @@
+Solution 1
+
+Start
+Record starting position on a grid
+Rotate body 30 degrees at a time
+Before the next rotation, scan the area for an object using the ultrasonic sensor
+If there is an object, move towards the object
+Scan the colour of the object
+If the object is red or yellow, push the object to starting position
+Else if the object is blue or green, mark object position and move away from it
+Else pass
+Once object is back at starting position repeat from number three until red and yellow are at starting position
+
+Solution 2
+
+Start
+Record starting position on a grid
+Move forward to centre of the area
+Rotate body 30 degrees at a time, scanning after each rotation using the ultrasonic sensor
+If there is an object, move towards the object
+Scan the colour of the object
+If the object is red or yellow, push the object to starting position
+Else if the object is blue or green, mark object position and move away from it
+Else pass
+Repeat from number 3 until yellow and red bricks are back at the starting position
+
+Solution 3
+
+Record starting position on a grid
+Scan the area in front for objects
+Record any object's locations on the grid
+Turn 90 degrees to the left
+Move forward 10 centimetres
+Turn 90 degrees to the right
+Move to the middle of the side
+Turn 90 degrees to the right
+Scan the area in front for objects
+Record any object's locations on the grid
+Go up to recorded objects on grid and check their colours
+If the object is red or yellow, push the object to starting position
+Else if the object is blue or green, mark object position and move away from it
+Else pass
+Repeat from number 11 until yellow and red bricks are back at the starting position
