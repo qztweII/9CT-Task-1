@@ -43,7 +43,7 @@
 
 ---
 
-## Day 3 - 01-04-2025
+## Day 3 - 03-04-2025
 - Eli is working on finishing pseudocode and working on ideas for the robots movement and detection code.
 
 ### Plans for next time
@@ -54,11 +54,11 @@
 
 ---
 
-## Day 4 - DD-MM-YYYY
-- [List the objectives or tasks planned for the day]
+## Day 4 - 07-04-2025
+- Eli is going to actually start coding the robot and test it
 
 ### Plans for next time
-- [List tasks or goals for the next workday]
+- get help for code
 
 ### Other Notes
-- [Any miscellaneous notes, feedback, or ideas]
+- Eli needs the actual color of the blocks

@@ -1,6 +1,14 @@
 start
-move around until I find a block
+move around the edge until I find a block
 check block colour
-if its the correct colour i transport it back 
+if its the correct colour I transport it back
 if it is another block move around it and keep looking
-if I go too far i'll come back and look in different areas
+if I go too far I'll come back and look in the opposite direction
+when I find all of the blocks end
+
+start
+go to the middle and move when I scan a block
+check block colour
+if its the right colour transport
+if not keep searching
+when I find all of the blocks end
