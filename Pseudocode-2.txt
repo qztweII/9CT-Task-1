@@ -1,1 +1,14 @@
 Start
+positions  = (A tuple)
+
+def look: 
+    Drivebase until both motors are both at 0 degrees
+    while ultrasonic < 120:
+        turn 1 degree clockwise
+        check sensors
+        degress += 1
+    measure distance
+    store vertical = distance * sin(degrees)
+    store horiznontal = distance * cos(degrees)
+    return (horizontal, vertical)
+
