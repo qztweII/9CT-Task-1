@@ -1,14 +1,46 @@
 Start
-positions  = (A tuple)
+positions  = (A list)
+degrees_turned = 0
+
+def reset:
+    Drivebase until both motors are both at 0 degrees
 
 def look: 
-    Drivebase until both motors are both at 0 degrees
+    global degrees_turned
     while ultrasonic < 120:
         turn 1 degree clockwise
+        degrees_turned += 1
         check sensors
         degress += 1
     measure distance
     store vertical = distance * sin(degrees)
     store horiznontal = distance * cos(degrees)
+    if degrees_turned < 90:
+        horizontal = -horizontal
     return (horizontal, vertical)
 
+
+reset
+turn 90 degrees anti-clockwise
+while degrees_turned < 180:
+    positions.append(look)
+    turn 5 degrees clockwise
+    degrees_turned += 5
+
+reset
+for i in range(len(positions)):
+#Go to the object
+    turn clockwise(90)
+    move forward (positions[i][0])
+    turn anti-clockwise(90)
+    move forward (positions[i][1])
+
+    backward = 0
+    if sensor not returns RED or YELLOW:
+        move backward (10)
+        backward += 10
+    #Pushes the selected box back, and moves to the start
+    turn clockwise (180)
+    move forward (positions[i][0]) - backward #If the box was not red or yellow
+    turn anti-clockwise(90)
+    move forward (positions[i][1])
