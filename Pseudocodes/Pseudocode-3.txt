@@ -1,3 +1,5 @@
+Pseudocode-3
+
 Start
 positions  = (A list)
 degrees_turned = 0
@@ -39,7 +41,7 @@ for i in range(len(positions)):
     if sensor not returns RED or YELLOW:
         move backward (10)
         backward += 10
-    #Pushes the selected box back, and moves to the start
+    #Turn and push
     turn clockwise (180)
     move forward (positions[i][0]) - backward #If the box was not red or yellow
     turn anti-clockwise(90)
@@ -57,6 +59,9 @@ FInd distance * cos(degrees) and store it in horizontal distance
 Keep going until I have turned 180 degrees
 
 use vertical distances and horizontal distances to get to the object
-if it is red or yellow, go behind it and push it to the start
-otherwise, go back to the start
+if it is red or yellow, rotate 180 degrees (The object will bet caught between the two extended rods)
+go back to the start
+
+Modifications required:
+Both protruding rods on the robot's front have been extended
 

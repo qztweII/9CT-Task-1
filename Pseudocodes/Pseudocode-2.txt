@@ -1,0 +1,70 @@
+Start
+positions  = (A list)
+degrees_turned = 0
+
+def reset:
+    Drivebase until both motors are both at 0 degrees
+
+def look: 
+    global degrees_turned
+    while ultrasonic < 120:
+        turn 1 degree clockwise
+        degrees_turned += 1
+        check sensors
+        degress += 1
+    measure distance
+    store vertical = distance * sin(degrees)
+    store horiznontal = distance * cos(degrees)
+    if degrees_turned < 90:
+        horizontal = -horizontal
+    return (horizontal, vertical)
+
+
+reset
+turn 90 degrees anti-clockwise
+while degrees_turned < 180:
+    positions.append(look)
+    turn 5 degrees clockwise
+    degrees_turned += 5
+
+reset
+for i in range(len(positions)):
+    reset
+    turn clockwise(90)
+    move forward (positions[i][0])
+    turn anti-clockwise(90)
+    move forward (positions[i][1])
+
+    backward = 0
+    if sensor not returns RED or YELLOW:
+        move backward (10)
+        backward += 10
+    #Pushes the selected box back, and moves to the start
+    else:
+        turn anticlockwise (90)
+        move forward (100)
+        turn clockwise (90)
+        move forward (100)
+        move clockwise (90)
+        move forward (100)
+        turn anticlockwise (90)
+    turn clockwise (180)
+    move forward ((positions[i][0]) - backward)
+    turn anti-clockwise(90)
+    move forward (positions[i][1])
+    
+
+
+In English:
+reset my motors so they are both zeroed
+
+Turn 1 degree, then check if there is a thing
+If there is a thing, record its distance and amount of degrees turned
+Find distance * sin(degrees) and store it in vertical distance
+FInd distance * cos(degrees) and store it in horizontal distance
+Keep going until I have turned 180 degrees
+
+use vertical distances and horizontal distances to get to the object
+if it is red or yellow, go behind it and push it to the start
+otherwise, go back to the start
+
