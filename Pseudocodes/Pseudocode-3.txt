@@ -1,7 +1,7 @@
 Pseudocode-3
 
 Start
-positions  = (A list)
+list_of_positions  = [A list]
 degrees_turned = 0
 
 def reset:
@@ -43,7 +43,7 @@ for i in range(len(positions)):
         backward += 10
     #Turn and push
     turn clockwise (180)
-    move forward (positions[i][0]) - backward #If the box was not red or yellow
+    move forward ((positions[i][0]) - backward) #If the box was not red or yellow
     turn anti-clockwise(90)
     move forward (positions[i][1])
     
