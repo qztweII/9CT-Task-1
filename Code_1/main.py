@@ -23,14 +23,19 @@ def look():
     while degrees_turned < 175:
         if Eyes.distance() < 30:
             Farness = Eyes.distance()
-            Horizontal = sin((degrees_turned - 90) * Farness)
+            Horizontal = sin((degrees_turned - 90) * Farness) #Finds the vertical and horizontal distance of the boxes
             Vertical = cos((degrees_turned - 90) * Farness)
             Driver.turn(5)
             degrees_turned += 5
+            positions.append([Horizontal, Vertical])
         else:
             Driver.turn(1)
             degrees_turned += 1
+    Driver.turn((180 - degrees_turned))
+    return positions
 
 
 
 # Write your program here.
+while True:
+    
