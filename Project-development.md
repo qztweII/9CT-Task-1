@@ -62,3 +62,13 @@
 
 ### Other Notes
 - Eli needs the actual color of the blocks
+
+
+## Day 5 - 12-04-2025
+- Eli is going to continue coding and testing
+
+### Plans for next time
+- Eli finishes pseudocode
+
+### Other Notes
+- [Any miscellaneous notes, feedback, or ideas]
