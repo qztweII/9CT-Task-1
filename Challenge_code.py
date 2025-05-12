@@ -49,7 +49,8 @@ def find():
         finding = 5
     while finding == 5:
         forward(boardX / 2)
-        for i in range(72) #FINISH
+        for i in range(72): #FINISH
+            a
 
 
 while finished == False:
