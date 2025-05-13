@@ -7,8 +7,40 @@ if I go too far I'll come back and look in the opposite direction
 when I find all of the blocks end
 
 start
-go to the middle and move when I scan a block
+go to the middle, move forward when I scan a block
 check block colour
-if its the right colour transport
-if not keep searching
+if it's the right colour transport
+else keep searching
 when I find all of the blocks end
+
+start
+
+move across a third of the top edge of the board
+scan for blocks
+if block found check
+if block is red or yellow bring block to start
+repeat 3 times
+
+turn right 90 degrees
+move across the right edge of the board
+turn right 90 degrees
+
+move across a third of the bottom edge of the board
+scan for blocks
+if block is found check
+if block is red or yellow bring block to start
+repeat 3 times
+
+turn right 90 degrees
+move across half of the left edge of the board
+turn right 90 degrees
+move to the centre of the board
+
+turn right 5 degrees
+scan for block
+if block found check block
+if block is red or yellow bring block to start
+repeat 72 times
+
+turn left 135 degrees
+move back to start
