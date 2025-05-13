@@ -6,12 +6,16 @@ if it is another block move around it and keep looking
 if I go too far I'll come back and look in the opposite direction
 when I find all of the blocks end
 
+
+
 start
 go to the middle, move forward when I scan a block
 check block colour
 if it's the right colour transport
 else keep searching
 when I find all of the blocks end
+
+
 
 start
 
