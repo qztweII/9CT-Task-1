@@ -10,11 +10,16 @@ from pybricks.media.ev3dev import SoundFile, ImageFile
 from umath import sin, cos
 
 # Create your objects here.
+# Motors: Ports B and C
+# Ultrasonic sensor: Port 1
+# Colour sensor: Port 2
+
 ev3 = EV3Brick()
 MotorL = Motor(Port.B)
 MotorR = Motor(Port.C)
 Driver = DriveBase(MotorL, MotorR, wheel_diameter = 55, axle_track = 104)
-Eyes = UltrasonicSensor(Port.1)
+Eyes = UltrasonicSensor(Port.S1)
+ColourCheck = ColorSensor(Port.S2)
 
 def look():
     global Driver, degrees_turned
@@ -37,5 +42,26 @@ def look():
 
 
 # Write your program here.
+previousVertical = 0
 while True:
+    for i in look():
+        Driver.forward((i[1] - previousVertical))
+        if i[0] < 0:
+            Driver.turn(-90)
+        elif i[0] > 0:
+            Driver.turn(90)
+        
+        if ColourCheck.color() == Color.RED or Color.YELLOW:
+            Driver.forward(i[0])
+            Driver.forward(10)
+            Driver.turn((90 * (i[0] ** 0)))
+            Driver.forward(i[1] + 30)
+            Driver.forward(-30)
+            Driver.turn((90 * (i[0] ** 0)))
+            Driver.forward(i[0] + 10)
+            previousVertical = 0
+        else:
+            Driver.turn((-90 * (i[0] ** 0)))
+            previousVertical = i[1]
+
     

@@ -1,0 +1,25 @@
+Pseudocode-4
+
+while True:
+    Turn 1 degree, then check if there is a thing
+    If there is a thing, record its distance and amount of degrees turned
+    Find distance * sin(degrees) and store it in vertical distance
+    FInd distance * cos(degrees) and store it in horizontal distance
+    record it all into a list called 'positions'
+    Keep going until I have turned 180 degrees
+
+    For every item in positions:
+        Move to the vertical length (This should be vertical length - previous vertical length)
+        Turn 90 degrees in the direction according to whether the horizontal distance was positive or negative
+        otherwise, 
+        if it is red or yellow:
+            move by horizontal distance
+            rotate 90 degrees (The object will bet caught between the two extended rods)
+            go back to the start (previous vertical will be put back to 0)
+        else:
+            turn back 90 degrees and move to the next object
+
+
+Modifications required:
+Both protruding rods on the robot's front have been extended, make sure they are wide, and have hooks at the end of them. 
+
