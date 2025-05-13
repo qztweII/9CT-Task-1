@@ -72,3 +72,13 @@
 
 ### Other Notes
 - [Any miscellaneous notes, feedback, or ideas]
+
+
+## Day 6 - 13-04-2025
+- Eli is going to do pseudocode
+
+### Plans for next time
+- Eli builds the grabber for our robot
+
+### Other Notes
+- [Any miscellaneous notes, feedback, or ideas]
