@@ -21,15 +21,15 @@ Driver = DriveBase(MotorL, MotorR, wheel_diameter = 55, axle_track = 104)
 Eyes = UltrasonicSensor(Port.S2)
 ColourCheck = ColorSensor(Port.S1)
 
-farness = 0
+Farness = 0
 
 def look():
-    global Driver, degrees_turned
+    global Driver, degrees_turned, Eyes
     positions = []
     degrees_turned = 0 #Records the amount of degrees turned
     while degrees_turned < 175:
-        farness = Eyes.distance()
-        if farness < 30:
+        Farness = Eyes.distance()
+        if Farness < 30:
             Farness = Eyes.distance()
             Horizontal = sin((degrees_turned - 90) * Farness) #Finds the vertical and horizontal distance of the boxes
             Vertical = cos((degrees_turned - 90) * Farness)
