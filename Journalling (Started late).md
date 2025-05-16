@@ -17,6 +17,14 @@
 > I have made a fourth pseudocode. This should be the best out of all of them. 
 > Time is already running out. I better finish the code by today. 
 ## What I plan to do the next day:
-> 
+> TEST!!!!!!!!!
 ## Notes on the teammates:
 > Since I have not made enough progress on my code, the team has decided that Eli's code would be the better choice. 
+
+#Day s + 2
+## What I have done today:
+> Today is the day to test, and adjust the problems
+## What I plan to do the next day:
+> 
+## Notes on the teammates:
+>                                                      
