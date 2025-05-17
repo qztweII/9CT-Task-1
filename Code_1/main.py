@@ -24,6 +24,7 @@ ColourCheck = ColorSensor(Port.S1)
 Farness = 0
 
 def look():
+    '''Turns and looks for objects'''
     global Driver, degrees_turned, Eyes
     positions = []
     degrees_turned = 0 #Records the amount of degrees turned
@@ -49,12 +50,14 @@ previousVertical = 0
 while True:
     for i in look():
         Driver.forward((i[1] - previousVertical))
+        '''Turns to look at the object'''
         if i[0] < 0:
             Driver.turn(-90)
         elif i[0] > 0:
             Driver.turn(90)
         
         if ColourCheck.color() == Color.RED or Color.YELLOW:
+            '''The robot moves the box back to the start'''
             Driver.forward(i[0])
             Driver.forward(10)
             Driver.turn((90 * (i[0] ** 0)))
@@ -64,6 +67,7 @@ while True:
             Driver.forward(i[0] + 10)
             previousVertical = 0
         else:
+            '''The robot just moves on to the next box'''
             Driver.turn((-90 * (i[0] ** 0)))
             previousVertical = i[1]
 
