@@ -15,10 +15,14 @@ We are to create a piece of code that allows a robot to go from a starting point
 ---
 ## In a few lines:
 
+Functional criteria:
+
 > Uses sensors to find boxes and identify their colour
 
 > Be able to transport the boxes with the correct colours back to the start
 
 > Avoid wrong coloured boxes
 
-> The robot should be able to do this relatively quickly, with as little unnecessary distance travelled.  
+Non-functional criteria:
+
+> The robot should be able to do this relatively quickly, with as little unnecessary distance travelled. 
